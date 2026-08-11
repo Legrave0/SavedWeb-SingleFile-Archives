@@ -87,7 +87,7 @@
             {% for _f in _files %}
             {% if _f.name == "index.html" %}{% continue %}{% endif %}
             <li class="item">
-                <a class="link" href="{{ _f.relative_path | relative_url }}" target="_blank">{{ _f.name }}</a>
+                <a class="link" href="{{ site.baseurl }}/{{ _f.name }}" target="_blank">{{ _f.name }}</a>
             </li>
             {% endfor %}
         </ul>
